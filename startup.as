@@ -7,10 +7,11 @@
 	;
 	; Compiler options:
 	;
-	; -orelay.cof -mrelay.map --summary=default --output=default relay.p1 \
-	; --chip=16F877A -P --runtime=default --opt=default -D__DEBUG=1 -g \
-	; --asmlist --errformat=Error   [%n] %f; %l.%c %s \
-	; --msgformat=Advisory[%n] %s --warnformat=Warning [%n] %f; %l.%c %s
+	; -olcd dsp for loop.cof -mlcd dsp for loop.map --summary=default \
+	; --output=default lcd dsp for loop.p1 --chip=16F877A -P \
+	; --runtime=default --opt=default -D__DEBUG=1 -g --asmlist \
+	; --errformat=Error   [%n] %f; %l.%c %s --msgformat=Advisory[%n] %s \
+	; --warnformat=Warning [%n] %f; %l.%c %s
 	;
 
 
