@@ -1,0 +1,135 @@
+__S0 2008 0 ABS
+__S1 74 0 ABS
+__S2 0 0 ABS
+__Hintentry 0 0 CODE
+__Lintentry 0 0 CODE
+_main 737 0 CODE
+btemp 7E 0 ABS
+_exit 0 0 CODE
+start 0 0 CODE
+_TRISC 87 0 ABS
+reset_vec 0 0 CODE
+_TRISD 88 0 ABS
+main@A 20 0 BANK0
+_PORTC 7 0 ABS
+main@B 2A 0 BANK0
+_PORTD 8 0 ABS
+wtemp0 7E 0 ABS
+__Hconfig 2008 0 CONFIG
+__Lconfig 2007 0 CONFIG
+main@i 34 0 BANK0
+__Hram 0 0 ABS
+__Lram 0 0 ABS
+?_main 70 0 COMMON
+__Hfunctab 0 0 CODE
+__Lfunctab 0 0 CODE
+__Hcommon 0 0 ABS
+__Lcommon 0 0 ABS
+__Heeprom_data 0 0 EEDATA
+__Leeprom_data 0 0 EEDATA
+__Habs1 0 0 ABS
+__Labs1 0 0 ABS
+__Hsfr0 0 0 ABS
+__Lsfr0 0 0 ABS
+__Hsfr1 0 0 ABS
+__Lsfr1 0 0 ABS
+__Hsfr2 0 0 ABS
+__Lsfr2 0 0 ABS
+__Hsfr3 0 0 ABS
+__Lsfr3 0 0 ABS
+init_fetch 700 0 CODE
+__Hcode 0 0 ABS
+__Lcode 0 0 ABS
+??_main 70 0 COMMON
+__HcstackBANK0 0 0 ABS
+__LcstackBANK0 0 0 ABS
+__pcstackBANK0 20 0 BANK0
+__Hinit 0 0 CODE
+__Linit 0 0 CODE
+__end_of_main 800 0 CODE
+__Htext 0 0 ABS
+__Ltext 0 0 ABS
+__HdataBANK0 0 0 ABS
+__LdataBANK0 0 0 ABS
+__pdataBANK0 36 0 BANK0
+end_of_initialization 71F 0 CODE
+__Hstrings 0 0 ABS
+__Lstrings 0 0 ABS
+__Hbank0 0 0 ABS
+__Lbank0 0 0 ABS
+__Hbank1 0 0 ABS
+__Lbank1 0 0 ABS
+__Hbank2 0 0 ABS
+__Lbank2 0 0 ABS
+__Hbank3 0 0 ABS
+__Lbank3 0 0 ABS
+__Hpowerup 0 0 CODE
+__Lpowerup 0 0 CODE
+__Hclrtext 0 0 ABS
+__Lclrtext 0 0 ABS
+__Hidloc 0 0 IDLOC
+__Lidloc 0 0 IDLOC
+init_ram 704 0 CODE
+main@F513 36 0 BANK0
+__Hcinit 0 0 ABS
+__Lcinit 0 0 ABS
+main@F517 40 0 BANK0
+__size_of_main 0 0 ABS
+__HidataBANK0 0 0 ABS
+__LidataBANK0 0 0 ABS
+__pidataBANK0 723 0 CODE
+__Hend_init 3 0 CODE
+__Lend_init 0 0 CODE
+__Hreset_vec 0 0 CODE
+__Lreset_vec 0 0 CODE
+intlevel0 0 0 CODE
+intlevel1 0 0 CODE
+intlevel2 0 0 CODE
+intlevel3 0 0 CODE
+intlevel4 0 0 CODE
+intlevel5 0 0 CODE
+__HcstackCOMMON 0 0 ABS
+__LcstackCOMMON 0 0 ABS
+__pcstackCOMMON 70 0 COMMON
+start_initialization 711 0 CODE
+__Hmaintext 0 0 ABS
+__Lmaintext 0 0 ABS
+__pmaintext 737 0 CODE
+__Hinittext 0 0 ABS
+__Linittext 0 0 ABS
+%segments
+reset_vec 0 5 CODE 0
+config 400E 400F CONFIG 400E
+cstackCOMMON 70 73 COMMON 70
+cstackBANK0 20 49 BANK0 20
+maintext E6E FFF CODE E6E
+idataBANK0 E46 E6D CODE E46
+cinit E22 E45 CODE E22
+inittext E00 E21 CODE E00
+%locals
+startup.obj
+startup.as
+66 0 0 CODE
+MULTIPLE NO DISP HALF AND HALF.obj
+D:\MICROPROCESSOR WORKSHOP\Projects\SEGMENT PROJECTS\MULTIPLE NO DISP HALF AND HALF\MULTIPLE NO DISP HALF AND HALF.c
+2 2007 0 CONFIG
+8 723 0 CODE
+18 72D 0 CODE
+7 737 0 CODE
+8 73D 0 CODE
+9 752 0 CODE
+10 755 0 CODE
+12 769 0 CODE
+13 773 0 CODE
+15 77C 0 CODE
+16 77F 0 CODE
+10 788 0 CODE
+18 79D 0 CODE
+19 7B2 0 CODE
+20 7B5 0 CODE
+22 7C9 0 CODE
+23 7D3 0 CODE
+24 7DC 0 CODE
+25 7DF 0 CODE
+20 7E8 0 CODE
+27 7FD 0 CODE

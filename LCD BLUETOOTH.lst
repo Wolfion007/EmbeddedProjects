@@ -1,0 +1,1379 @@
+
+
+HI-TECH Software PIC LITE Macro Assembler V9.71a build 6446 
+                                                                                               Thu Jan 05 10:54:06 2023
+
+HI-TECH Software Omniscient Code Generator (Lite mode) build 6446
+     1  0000                     opt subtitle "HI-TECH Software Omniscient Code Generator (Lite mode) build 6446"
+     2                           
+     3                           opt pagewidth 120
+     4                           
+     5                           	opt lm
+     6                           
+     7                           	processor	16F877A
+     8                           clrc	macro
+     9                           	bcf	3,0
+    10  0000                     	endm
+    11                           clrz	macro
+    12                           	bcf	3,2
+    13  0000                     	endm
+    14                           setc	macro
+    15                           	bsf	3,0
+    16  0000                     	endm
+    17                           setz	macro
+    18                           	bsf	3,2
+    19  0000                     	endm
+    20                           skipc	macro
+    21                           	btfss	3,0
+    22  0000                     	endm
+    23                           skipz	macro
+    24                           	btfss	3,2
+    25  0000                     	endm
+    26                           skipnc	macro
+    27                           	btfsc	3,0
+    28  0000                     	endm
+    29                           skipnz	macro
+    30                           	btfsc	3,2
+    31  0000                     	endm
+    32  0000                     indf	equ	0
+    33  0000                     indf0	equ	0
+    34  0002                     pc	equ	2
+    35  0002                     pcl	equ	2
+    36  0003                     status	equ	3
+    37  0004                     fsr	equ	4
+    38  0004                     fsr0	equ	4
+    39  0001                     c	equ	1
+    40  0000                     z	equ	0
+    41  000A                     pclath	equ	10
+    42                           # 2 "C:\Users\sreya\Desktop\embeded\LCD BLUETOOTH\LCD BLUETOOTH.c"
+    43                           	psect config,class=CONFIG,delta=2 ;#
+    44                           # 2 "C:\Users\sreya\Desktop\embeded\LCD BLUETOOTH\LCD BLUETOOTH.c"
+    45  2007  3F72               	dw 0x3F72 ;#
+    46                           	FNCALL	_main,_command
+    47                           	FNCALL	_main,_data
+    48                           	FNROOT	_main
+    49                           	global	main@F519
+    50                           	global	main@F523
+    51                           	global	main@F531
+    52                           	global	main@F527
+    53                           psect	idataBANK0,class=CODE,space=0,delta=2
+    54                           global __pidataBANK0
+    55  0619                     __pidataBANK0:
+    56                           	file	"C:\Users\sreya\Desktop\embeded\LCD BLUETOOTH\LCD BLUETOOTH.c"
+    57                           	line	48
+    58                           
+    59                           ;initializer for main@F519
+    60  0619  3473               	retlw	073h
+    61  061A  3461               	retlw	061h
+    62  061B  3472               	retlw	072h
+    63  061C  3461               	retlw	061h
+    64  061D  346E               	retlw	06Eh
+    65  061E  3400               	retlw	0
+    66                           	line	59
+    67                           
+    68                           ;initializer for main@F523
+    69  061F  3472               	retlw	072h
+    70  0620  3469               	retlw	069h
+    71  0621  3474               	retlw	074h
+    72  0622  3468               	retlw	068h
+    73  0623  3469               	retlw	069h
+    74  0624  3400               	retlw	0
+    75                           	line	81
+    76                           
+    77                           ;initializer for main@F531
+    78  0625  3473               	retlw	073h
+    79  0626  3461               	retlw	061h
+    80  0627  346E               	retlw	06Eh
+    81  0628  3474               	retlw	074h
+    82  0629  346F               	retlw	06Fh
+    83  062A  3400               	retlw	0
+    84                           	line	70
+    85                           
+    86                           ;initializer for main@F527
+    87  062B  346D               	retlw	06Dh
+    88  062C  3475               	retlw	075h
+    89  062D  3472               	retlw	072h
+    90  062E  3475               	retlw	075h
+    91  062F  3400               	retlw	0
+    92                           	global	_PORTC
+    93  0007                     _PORTC	set	7
+    94                           	global	_PORTD
+    95  0008                     _PORTD	set	8
+    96                           	global	_RCREG
+    97  001A                     _RCREG	set	26
+    98                           	global	_RCSTA
+    99  0018                     _RCSTA	set	24
+   100                           	global	_RC0
+   101  0038                     _RC0	set	56
+   102                           	global	_RC1
+   103  0039                     _RC1	set	57
+   104                           	global	_RC2
+   105  003A                     _RC2	set	58
+   106                           	global	_SPBRG
+   107  0099                     _SPBRG	set	153
+   108                           	global	_TRISC
+   109  0087                     _TRISC	set	135
+   110                           	global	_TRISD
+   111  0088                     _TRISD	set	136
+   112                           	global	_TXSTA
+   113  0098                     _TXSTA	set	152
+   114                           	global	_BRGH
+   115  04C2                     _BRGH	set	1218
+   116                           	file	"LCD BLUETOOTH.as"
+   117                           	line	#
+   118                           psect cinit,class=CODE,delta=2
+   119                           global start_initialization
+   120  05E1                     start_initialization:
+   121                           
+   122                           psect	dataBANK0,class=BANK0,space=1
+   123                           global __pdataBANK0
+   124  003F                     __pdataBANK0:
+   125                           	file	"C:\Users\sreya\Desktop\embeded\LCD BLUETOOTH\LCD BLUETOOTH.c"
+   126                           	line	48
+   127  003F                     main@F519:
+   128  003F                            ds      6
+   129                           
+   130                           psect	dataBANK0
+   131                           	file	"C:\Users\sreya\Desktop\embeded\LCD BLUETOOTH\LCD BLUETOOTH.c"
+   132                           	line	59
+   133  0045                     main@F523:
+   134  0045                            ds      6
+   135                           
+   136                           psect	dataBANK0
+   137                           	file	"C:\Users\sreya\Desktop\embeded\LCD BLUETOOTH\LCD BLUETOOTH.c"
+   138                           	line	81
+   139  004B                     main@F531:
+   140  004B                            ds      6
+   141                           
+   142                           psect	dataBANK0
+   143                           	file	"C:\Users\sreya\Desktop\embeded\LCD BLUETOOTH\LCD BLUETOOTH.c"
+   144                           	line	70
+   145  0051                     main@F527:
+   146  0051                            ds      5
+   147                           
+   148                           global btemp
+   149                           psect inittext,class=CODE,delta=2
+   150                           global init_fetch,btemp
+   151                           ;	Called with low address in FSR and high address in W
+   152  05D0                     init_fetch:
+   153  05D0  087E               	movf btemp,w
+   154  05D1  008A               	movwf pclath
+   155  05D2  087F               	movf btemp+1,w
+   156  05D3  0082               	movwf pc
+   157                           global init_ram
+   158                           ;Called with:
+   159                           ;	high address of idata address in btemp 
+   160                           ;	low address of idata address in btemp+1 
+   161                           ;	low address of data in FSR
+   162                           ;	high address + 1 of data in btemp-1
+   163  05D4                     init_ram:
+   164  05D4  25D0  120A  118A   	fcall init_fetch
+   165  05D7  0080               	movwf indf,f
+   166  05D8  0A84               	incf fsr,f
+   167  05D9  0804               	movf fsr,w
+   168  05DA  067D               	xorwf btemp-1,w
+   169  05DB  1903               	btfsc status,2
+   170  05DC  3400               	retlw 0
+   171  05DD  0AFF               	incf btemp+1,f
+   172  05DE  1903               	btfsc status,2
+   173  05DF  0AFE               	incf btemp,f
+   174  05E0  2DD4               	goto init_ram
+   175                           ; Initialize objects allocated to BANK0
+   176                           psect cinit,class=CODE,delta=2
+   177                           global init_ram, __pidataBANK0
+   178  05E1  1383               	bcf	status, 7	;select IRP bank0
+   179  05E2  3056               	movlw low(__pdataBANK0+23)
+   180  05E3  00FD               	movwf btemp-1,f
+   181  05E4  3006               	movlw high(__pidataBANK0)
+   182  05E5  00FE               	movwf btemp,f
+   183  05E6  3019               	movlw low(__pidataBANK0)
+   184  05E7  00FF               	movwf btemp+1,f
+   185  05E8  303F               	movlw low(__pdataBANK0)
+   186  05E9  0084               	movwf fsr,f
+   187  05EA  120A  118A  25D4   	fcall init_ram
+              120A  118A         
+   188                           psect cinit,class=CODE,delta=2
+   189                           global end_of_initialization
+   190                           
+   191                           ;End of C runtime variable initialization code
+   192                           
+   193  05EF                     end_of_initialization:
+   194  05EF  0183               clrf status
+   195  05F0  120A  118A  2E30   ljmp _main	;jump to C main() function
+   196                           psect	cstackCOMMON,class=COMMON,space=1
+   197                           global __pcstackCOMMON
+   198  0070                     __pcstackCOMMON:
+   199                           	global	?_command
+   200  0070                     ?_command:	; 0 bytes @ 0x0
+   201                           	global	??_command
+   202  0070                     ??_command:	; 0 bytes @ 0x0
+   203                           	global	?_data
+   204  0070                     ?_data:	; 0 bytes @ 0x0
+   205                           	global	??_data
+   206  0070                     ??_data:	; 0 bytes @ 0x0
+   207                           	global	?_main
+   208  0070                     ?_main:	; 0 bytes @ 0x0
+   209  0070                     	ds	1
+   210                           	global	command@y
+   211  0071                     command@y:	; 1 bytes @ 0x1
+   212                           	global	data@z
+   213  0071                     data@z:	; 1 bytes @ 0x1
+   214  0071                     	ds	1
+   215                           	global	??_main
+   216  0072                     ??_main:	; 0 bytes @ 0x2
+   217  0072                     	ds	3
+   218                           psect	cstackBANK0,class=BANK0,space=1
+   219                           global __pcstackBANK0
+   220  0020                     __pcstackBANK0:
+   221                           	global	main@a
+   222  0020                     main@a:	; 6 bytes @ 0x0
+   223  0020                     	ds	6
+   224                           	global	main@a_312
+   225  0026                     main@a_312:	; 6 bytes @ 0x6
+   226  0026                     	ds	6
+   227                           	global	main@a_318
+   228  002C                     main@a_318:	; 6 bytes @ 0xC
+   229  002C                     	ds	6
+   230                           	global	main@a_315
+   231  0032                     main@a_315:	; 5 bytes @ 0x12
+   232  0032                     	ds	5
+   233                           	global	main@i
+   234  0037                     main@i:	; 2 bytes @ 0x17
+   235  0037                     	ds	2
+   236                           	global	main@j
+   237  0039                     main@j:	; 2 bytes @ 0x19
+   238  0039                     	ds	2
+   239                           	global	main@k
+   240  003B                     main@k:	; 2 bytes @ 0x1B
+   241  003B                     	ds	2
+   242                           	global	main@l
+   243  003D                     main@l:	; 2 bytes @ 0x1D
+   244  003D                     	ds	2
+   245 ;;Data sizes: Strings 0, constant 0, data 23, bss 0, persistent 0 stack 0
+   246 ;;Auto spaces:   Size  Autos    Used
+   247 ;; COMMON          14      5       5
+   248 ;; BANK0           80     31      54
+   249 ;; BANK1           80      0       0
+   250 ;; BANK3           96      0       0
+   251 ;; BANK2           96      0       0
+   252                           
+   253 ;;
+   254 ;; Pointer list with targets:
+   255                           
+   256                           
+   257                           
+   258 ;;
+   259 ;; Critical Paths under _main in COMMON
+   260 ;;
+   261 ;;   _main->_command
+   262 ;;   _main->_data
+   263 ;;
+   264 ;; Critical Paths under _main in BANK0
+   265 ;;
+   266 ;;   None.
+   267 ;;
+   268 ;; Critical Paths under _main in BANK1
+   269 ;;
+   270 ;;   None.
+   271 ;;
+   272 ;; Critical Paths under _main in BANK3
+   273 ;;
+   274 ;;   None.
+   275 ;;
+   276 ;; Critical Paths under _main in BANK2
+   277 ;;
+   278 ;;   None.
+   279                           
+   280 ;;
+   281 ;;Main: autosize = 0, tempsize = 3, incstack = 0, save=0
+   282 ;;
+   283                           
+   284 ;;
+   285 ;;Call Graph Tables:
+   286 ;;
+   287 ;; ---------------------------------------------------------------------------------
+   288 ;; (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+   289 ;; ---------------------------------------------------------------------------------
+   290 ;; (0) _main                                                34    34      0     412
+   291 ;;                                              2 COMMON     3     3      0
+   292 ;;                                              0 BANK0     31    31      0
+   293 ;;                            _command
+   294 ;;                               _data
+   295 ;; ---------------------------------------------------------------------------------
+   296 ;; (1) _data                                                 2     2      0      22
+   297 ;;                                              0 COMMON     2     2      0
+   298 ;; ---------------------------------------------------------------------------------
+   299 ;; (1) _command                                              2     2      0      22
+   300 ;;                                              0 COMMON     2     2      0
+   301 ;; ---------------------------------------------------------------------------------
+   302 ;; Estimated maximum stack depth 1
+   303 ;; ---------------------------------------------------------------------------------
+   304                           
+   305 ;; Call Graph Graphs:
+   306                           
+   307 ;; _main (ROOT)
+   308 ;;   _command
+   309 ;;   _data
+   310 ;;
+   311                           
+   312 ;; Address spaces:
+   313                           
+   314 ;;Name               Size   Autos  Total    Cost      Usage
+   315 ;;BANK3               60      0       0       9        0.0%
+   316 ;;BITBANK3            60      0       0       8        0.0%
+   317 ;;SFR3                 0      0       0       4        0.0%
+   318 ;;BITSFR3              0      0       0       4        0.0%
+   319 ;;BANK2               60      0       0      11        0.0%
+   320 ;;BITBANK2            60      0       0      10        0.0%
+   321 ;;SFR2                 0      0       0       5        0.0%
+   322 ;;BITSFR2              0      0       0       5        0.0%
+   323 ;;SFR1                 0      0       0       2        0.0%
+   324 ;;BITSFR1              0      0       0       2        0.0%
+   325 ;;BANK1               50      0       0       7        0.0%
+   326 ;;BITBANK1            50      0       0       6        0.0%
+   327 ;;CODE                 0      0       0       0        0.0%
+   328 ;;DATA                 0      0      3C      12        0.0%
+   329 ;;ABS                  0      0      3B       3        0.0%
+   330 ;;NULL                 0      0       0       0        0.0%
+   331 ;;STACK                0      0       1       2        0.0%
+   332 ;;BANK0               50     1F      36       5       67.5%
+   333 ;;BITBANK0            50      0       0       4        0.0%
+   334 ;;SFR0                 0      0       0       1        0.0%
+   335 ;;BITSFR0              0      0       0       1        0.0%
+   336 ;;COMMON               E      5       5       1       35.7%
+   337 ;;BITCOMMON            E      0       0       0        0.0%
+   338 ;;EEDATA             100      0       0       0        0.0%
+   339                           
+   340                           	global	_main
+   341                           psect	maintext,global,class=CODE,delta=2
+   342                           global __pmaintext
+   343  0630                     __pmaintext:
+   344                           
+   345 ;; *************** function _main *****************
+   346 ;; Defined at:
+   347 ;;		line 33 in file "C:\Users\sreya\Desktop\embeded\LCD BLUETOOTH\LCD BLUETOOTH.c"
+   348 ;; Parameters:    Size  Location     Type
+   349 ;;		None
+   350 ;; Auto vars:     Size  Location     Type
+   351 ;;  l               2   29[BANK0 ] int 
+   352 ;;  k               2   27[BANK0 ] int 
+   353 ;;  j               2   25[BANK0 ] int 
+   354 ;;  i               2   23[BANK0 ] int 
+   355 ;;  a               6   12[BANK0 ] unsigned char [6]
+   356 ;;  a               5   18[BANK0 ] unsigned char [5]
+   357 ;;  a               6    6[BANK0 ] unsigned char [6]
+   358 ;;  a               6    0[BANK0 ] unsigned char [6]
+   359 ;; Return value:  Size  Location     Type
+   360 ;;		None               void
+   361 ;; Registers used:
+   362 ;;		wreg, fsr0l, fsr0h, status,2, status,0, btemp+0, pclath, cstack
+   363 ;; Tracked objects:
+   364 ;;		On entry : 17F/0
+   365 ;;		On exit  : 0/0
+   366 ;;		Unchanged: 0/0
+   367 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+   368 ;;      Params:         0       0       0       0       0
+   369 ;;      Locals:         0      31       0       0       0
+   370 ;;      Temps:          3       0       0       0       0
+   371 ;;      Totals:         3      31       0       0       0
+   372 ;;Total ram usage:       34 bytes
+   373 ;; Hardware stack levels required when called:    1
+   374 ;; This function calls:
+   375 ;;		_command
+   376 ;;		_data
+   377 ;; This function is called by:
+   378 ;;		Startup code after reset
+   379 ;; This function uses a non-reentrant model
+   380 ;;
+   381                           psect	maintext
+   382                           	file	"C:\Users\sreya\Desktop\embeded\LCD BLUETOOTH\LCD BLUETOOTH.c"
+   383                           	line	33
+   384                           	global	__size_of_main
+   385  01D0                     	__size_of_main	equ	__end_of_main-_main
+   386                           	
+   387  0630                     _main:	
+   388                           	opt	stack 8
+   389                           ; Regs used in _main: [wreg-fsr0h+status,2-btemp+0+pclath+cstack]
+   390                           	line	34
+   391                           	
+   392  0630                     l1893:	
+   393                           ;LCD BLUETOOTH.c: 34: TRISD=0x00;
+   394  0630  1683               	bsf	status, 5	;RP0=1, select bank1
+   395  0631  1303               	bcf	status, 6	;RP1=0, select bank1
+   396  0632  0188               	clrf	(136)^080h	;volatile
+   397                           	line	35
+   398                           ;LCD BLUETOOTH.c: 35: PORTD=0x00;
+   399  0633  1283               	bcf	status, 5	;RP0=0, select bank0
+   400  0634  1303               	bcf	status, 6	;RP1=0, select bank0
+   401  0635  0188               	clrf	(8)	;volatile
+   402                           	line	36
+   403                           	
+   404  0636                     l1895:	
+   405                           ;LCD BLUETOOTH.c: 36: TRISC=0x80;
+   406  0636  3080               	movlw	(080h)
+   407  0637  1683               	bsf	status, 5	;RP0=1, select bank1
+   408  0638  1303               	bcf	status, 6	;RP1=0, select bank1
+   409  0639  0087               	movwf	(135)^080h	;volatile
+   410                           	line	37
+   411                           	
+   412  063A                     l1897:	
+   413                           ;LCD BLUETOOTH.c: 37: PORTC=0x00;
+   414  063A  1283               	bcf	status, 5	;RP0=0, select bank0
+   415  063B  1303               	bcf	status, 6	;RP1=0, select bank0
+   416  063C  0187               	clrf	(7)	;volatile
+   417                           	line	38
+   418                           ;LCD BLUETOOTH.c: 38: TXSTA=0x24;
+   419  063D  3024               	movlw	(024h)
+   420  063E  1683               	bsf	status, 5	;RP0=1, select bank1
+   421  063F  1303               	bcf	status, 6	;RP1=0, select bank1
+   422  0640  0098               	movwf	(152)^080h	;volatile
+   423                           	line	39
+   424                           ;LCD BLUETOOTH.c: 39: RCSTA=0x90;
+   425  0641  3090               	movlw	(090h)
+   426  0642  1283               	bcf	status, 5	;RP0=0, select bank0
+   427  0643  1303               	bcf	status, 6	;RP1=0, select bank0
+   428  0644  0098               	movwf	(24)	;volatile
+   429                           	line	40
+   430                           	
+   431  0645                     l1899:	
+   432                           ;LCD BLUETOOTH.c: 40: BRGH=1;
+   433  0645  1683               	bsf	status, 5	;RP0=1, select bank1
+   434  0646  1303               	bcf	status, 6	;RP1=0, select bank1
+   435  0647  1518               	bsf	(1218/8)^080h,(1218)&7
+   436                           	line	41
+   437                           ;LCD BLUETOOTH.c: 41: SPBRG=25;
+   438  0648  3019               	movlw	(019h)
+   439  0649  0099               	movwf	(153)^080h	;volatile
+   440                           	line	42
+   441                           	
+   442  064A                     l1901:	
+   443                           ;LCD BLUETOOTH.c: 42: command(0x01);
+   444  064A  3001               	movlw	(01h)
+   445  064B  120A  118A  25F3   	fcall	_command
+              120A  118A         
+   446                           	line	43
+   447                           ;LCD BLUETOOTH.c: 43: while(1)
+   448                           	
+   449  0650                     l570:	
+   450                           	line	45
+   451                           	
+   452  0650                     l1903:	
+   453                           ;LCD BLUETOOTH.c: 44: {
+   454                           ;LCD BLUETOOTH.c: 45: if(RCREG=='2')
+   455  0650  1283               	bcf	status, 5	;RP0=0, select bank0
+   456  0651  1303               	bcf	status, 6	;RP1=0, select bank0
+   457  0652  081A               	movf	(26),w	;volatile
+   458  0653  3A32               	xorlw	032h
+   459  0654  1D03               	skipz
+   460  0655  2E57               	goto	u2261
+   461  0656  2E58               	goto	u2260
+   462  0657                     u2261:
+   463  0657  2EBC               	goto	l571
+   464  0658                     u2260:
+   465                           	line	47
+   466                           	
+   467  0658                     l1905:	
+   468                           ;LCD BLUETOOTH.c: 46: {
+   469                           ;LCD BLUETOOTH.c: 47: command(0x01);
+   470  0658  3001               	movlw	(01h)
+   471  0659  120A  118A  25F3   	fcall	_command
+              120A  118A         
+   472                           	line	48
+   473                           	
+   474  065E                     l1907:	
+   475                           ;LCD BLUETOOTH.c: 48: char a[]={"saran"};
+   476  065E  3020               	movlw	(main@a)&0ffh
+   477  065F  0084               	movwf	fsr0
+   478  0660  1283               	bcf	status, 5	;RP0=0, select bank0
+   479  0661  1303               	bcf	status, 6	;RP1=0, select bank0
+   480  0662  083F               	movf	(main@F519),w
+   481  0663  1383               	bcf	status, 7	;select IRP bank0
+   482  0664  0080               	movwf	indf
+   483  0665  0A84               	incf	fsr0,f
+   484  0666  0840               	movf	(main@F519)+1,w
+   485  0667  0080               	movwf	indf
+   486  0668  0A84               	incf	fsr0,f
+   487  0669  0841               	movf	(main@F519)+2,w
+   488  066A  0080               	movwf	indf
+   489  066B  0A84               	incf	fsr0,f
+   490  066C  0842               	movf	(main@F519)+3,w
+   491  066D  0080               	movwf	indf
+   492  066E  0A84               	incf	fsr0,f
+   493  066F  0843               	movf	(main@F519)+4,w
+   494  0670  0080               	movwf	indf
+   495  0671  0A84               	incf	fsr0,f
+   496  0672  0844               	movf	(main@F519)+5,w
+   497  0673  0080               	movwf	indf
+   498                           	line	49
+   499                           	
+   500  0674                     l1909:	
+   501                           ;LCD BLUETOOTH.c: 49: command(0x80);
+   502  0674  3080               	movlw	(080h)
+   503  0675  120A  118A  25F3   	fcall	_command
+              120A  118A         
+   504                           	line	50
+   505                           	
+   506  067A                     l1911:	
+   507                           ;LCD BLUETOOTH.c: 50: for(int i=0;i<=4;i++)
+   508  067A  3000               	movlw	low(0)
+   509  067B  1283               	bcf	status, 5	;RP0=0, select bank0
+   510  067C  1303               	bcf	status, 6	;RP1=0, select bank0
+   511  067D  00B7               	movwf	(main@i)
+   512  067E  3000               	movlw	high(0)
+   513  067F  00B8               	movwf	((main@i))+1
+   514                           	
+   515  0680                     l1913:	
+   516  0680  0838               	movf	(main@i+1),w
+   517  0681  3A80               	xorlw	80h
+   518  0682  00FE               	movwf	btemp+0
+   519  0683  3080               	movlw	(high(05h))^80h
+   520  0684  027E               	subwf	btemp+0,w
+   521  0685  1D03               	skipz
+   522  0686  2E89               	goto	u2275
+   523  0687  3005               	movlw	low(05h)
+   524  0688  0237               	subwf	(main@i),w
+   525  0689                     u2275:
+   526                           
+   527  0689  1C03               	skipc
+   528  068A  2E8C               	goto	u2271
+   529  068B  2E8D               	goto	u2270
+   530  068C                     u2271:
+   531  068C  2E8E               	goto	l574
+   532  068D                     u2270:
+   533                           	
+   534  068D                     l1915:	
+   535  068D  2EAF               	goto	l575
+   536                           	line	51
+   537                           	
+   538  068E                     l574:	
+   539                           	line	52
+   540                           	
+   541  068E                     l1917:	
+   542                           ;LCD BLUETOOTH.c: 51: {
+   543                           ;LCD BLUETOOTH.c: 52: data(a[i]);
+   544  068E  1283               	bcf	status, 5	;RP0=0, select bank0
+   545  068F  1303               	bcf	status, 6	;RP1=0, select bank0
+   546  0690  0837               	movf	(main@i),w
+   547  0691  3E20               	addlw	main@a&0ffh
+   548  0692  0084               	movwf	fsr0
+   549  0693  1383               	bcf	status, 7	;select IRP bank0
+   550  0694  0800               	movf	indf,w
+   551  0695  120A  118A  2606   	fcall	_data
+              120A  118A         
+   552                           	line	50
+   553                           	
+   554  069A                     l1919:	
+   555  069A  3001               	movlw	low(01h)
+   556  069B  1283               	bcf	status, 5	;RP0=0, select bank0
+   557  069C  1303               	bcf	status, 6	;RP1=0, select bank0
+   558  069D  07B7               	addwf	(main@i),f
+   559  069E  1803               	skipnc
+   560  069F  0AB8               	incf	(main@i+1),f
+   561  06A0  3000               	movlw	high(01h)
+   562  06A1  07B8               	addwf	(main@i+1),f
+   563                           	
+   564  06A2                     l1921:	
+   565  06A2  0838               	movf	(main@i+1),w
+   566  06A3  3A80               	xorlw	80h
+   567  06A4  00FE               	movwf	btemp+0
+   568  06A5  3080               	movlw	(high(05h))^80h
+   569  06A6  027E               	subwf	btemp+0,w
+   570  06A7  1D03               	skipz
+   571  06A8  2EAB               	goto	u2285
+   572  06A9  3005               	movlw	low(05h)
+   573  06AA  0237               	subwf	(main@i),w
+   574  06AB                     u2285:
+   575                           
+   576  06AB  1C03               	skipc
+   577  06AC  2EAE               	goto	u2281
+   578  06AD  2EAF               	goto	u2280
+   579  06AE                     u2281:
+   580  06AE  2E8E               	goto	l574
+   581  06AF                     u2280:
+   582                           	
+   583  06AF                     l575:	
+   584                           	line	54
+   585                           	
+   586  06AF                     l1923:	
+   587                           ;LCD BLUETOOTH.c: 53: }
+   588                           ;LCD BLUETOOTH.c: 54: _delay((unsigned long)((1000)*(4000000/4000.0)));
+   589                           	opt asmopt_off
+   590  06AF  3006               movlw  6
+   591  06B0  00F4               movwf	((??_main+0)+0+2),f
+   592  06B1  300E               movlw	14
+   593  06B2  00F3               movwf	((??_main+0)+0+1),f
+   594  06B3  30B0               	movlw	176
+   595  06B4  00F2               movwf	((??_main+0)+0),f
+   596  06B5                     u2387:
+   597  06B5  0BF2               	decfsz	((??_main+0)+0),f
+   598  06B6  2EB5               	goto	u2387
+   599  06B7  0BF3               	decfsz	((??_main+0)+0+1),f
+   600  06B8  2EB5               	goto	u2387
+   601  06B9  0BF4               	decfsz	((??_main+0)+0+2),f
+   602  06BA  2EB5               	goto	u2387
+   603                           opt asmopt_on
+   604                           
+   605                           	line	55
+   606                           ;LCD BLUETOOTH.c: 55: }
+   607  06BB  2FFC               	goto	l576
+   608                           	line	56
+   609                           	
+   610  06BC                     l571:	
+   611                           	
+   612  06BC                     l1925:	
+   613                           ;LCD BLUETOOTH.c: 56: else if(RCREG=='0')
+   614  06BC  1283               	bcf	status, 5	;RP0=0, select bank0
+   615  06BD  1303               	bcf	status, 6	;RP1=0, select bank0
+   616  06BE  081A               	movf	(26),w	;volatile
+   617  06BF  3A30               	xorlw	030h
+   618  06C0  1D03               	skipz
+   619  06C1  2EC3               	goto	u2291
+   620  06C2  2EC4               	goto	u2290
+   621  06C3                     u2291:
+   622  06C3  2F28               	goto	l577
+   623  06C4                     u2290:
+   624                           	line	58
+   625                           	
+   626  06C4                     l1927:	
+   627                           ;LCD BLUETOOTH.c: 57: {
+   628                           ;LCD BLUETOOTH.c: 58: command(0x01);
+   629  06C4  3001               	movlw	(01h)
+   630  06C5  120A  118A  25F3   	fcall	_command
+              120A  118A         
+   631                           	line	59
+   632                           	
+   633  06CA                     l1929:	
+   634                           ;LCD BLUETOOTH.c: 59: char a[]={"rithi"};
+   635  06CA  3026               	movlw	(main@a_312)&0ffh
+   636  06CB  0084               	movwf	fsr0
+   637  06CC  1283               	bcf	status, 5	;RP0=0, select bank0
+   638  06CD  1303               	bcf	status, 6	;RP1=0, select bank0
+   639  06CE  0845               	movf	(main@F523),w
+   640  06CF  1383               	bcf	status, 7	;select IRP bank0
+   641  06D0  0080               	movwf	indf
+   642  06D1  0A84               	incf	fsr0,f
+   643  06D2  0846               	movf	(main@F523)+1,w
+   644  06D3  0080               	movwf	indf
+   645  06D4  0A84               	incf	fsr0,f
+   646  06D5  0847               	movf	(main@F523)+2,w
+   647  06D6  0080               	movwf	indf
+   648  06D7  0A84               	incf	fsr0,f
+   649  06D8  0848               	movf	(main@F523)+3,w
+   650  06D9  0080               	movwf	indf
+   651  06DA  0A84               	incf	fsr0,f
+   652  06DB  0849               	movf	(main@F523)+4,w
+   653  06DC  0080               	movwf	indf
+   654  06DD  0A84               	incf	fsr0,f
+   655  06DE  084A               	movf	(main@F523)+5,w
+   656  06DF  0080               	movwf	indf
+   657                           	line	60
+   658                           	
+   659  06E0                     l1931:	
+   660                           ;LCD BLUETOOTH.c: 60: command(0x80);
+   661  06E0  3080               	movlw	(080h)
+   662  06E1  120A  118A  25F3   	fcall	_command
+              120A  118A         
+   663                           	line	61
+   664                           	
+   665  06E6                     l1933:	
+   666                           ;LCD BLUETOOTH.c: 61: for(int j=0;j<=4;j++)
+   667  06E6  3000               	movlw	low(0)
+   668  06E7  1283               	bcf	status, 5	;RP0=0, select bank0
+   669  06E8  1303               	bcf	status, 6	;RP1=0, select bank0
+   670  06E9  00B9               	movwf	(main@j)
+   671  06EA  3000               	movlw	high(0)
+   672  06EB  00BA               	movwf	((main@j))+1
+   673                           	
+   674  06EC                     l1935:	
+   675  06EC  083A               	movf	(main@j+1),w
+   676  06ED  3A80               	xorlw	80h
+   677  06EE  00FE               	movwf	btemp+0
+   678  06EF  3080               	movlw	(high(05h))^80h
+   679  06F0  027E               	subwf	btemp+0,w
+   680  06F1  1D03               	skipz
+   681  06F2  2EF5               	goto	u2305
+   682  06F3  3005               	movlw	low(05h)
+   683  06F4  0239               	subwf	(main@j),w
+   684  06F5                     u2305:
+   685                           
+   686  06F5  1C03               	skipc
+   687  06F6  2EF8               	goto	u2301
+   688  06F7  2EF9               	goto	u2300
+   689  06F8                     u2301:
+   690  06F8  2EFA               	goto	l580
+   691  06F9                     u2300:
+   692                           	
+   693  06F9                     l1937:	
+   694  06F9  2F1B               	goto	l581
+   695                           	line	62
+   696                           	
+   697  06FA                     l580:	
+   698                           	line	63
+   699                           	
+   700  06FA                     l1939:	
+   701                           ;LCD BLUETOOTH.c: 62: {
+   702                           ;LCD BLUETOOTH.c: 63: data(a[j]);
+   703  06FA  1283               	bcf	status, 5	;RP0=0, select bank0
+   704  06FB  1303               	bcf	status, 6	;RP1=0, select bank0
+   705  06FC  0839               	movf	(main@j),w
+   706  06FD  3E26               	addlw	main@a_312&0ffh
+   707  06FE  0084               	movwf	fsr0
+   708  06FF  1383               	bcf	status, 7	;select IRP bank0
+   709  0700  0800               	movf	indf,w
+   710  0701  120A  118A  2606   	fcall	_data
+              120A  118A         
+   711                           	line	61
+   712                           	
+   713  0706                     l1941:	
+   714  0706  3001               	movlw	low(01h)
+   715  0707  1283               	bcf	status, 5	;RP0=0, select bank0
+   716  0708  1303               	bcf	status, 6	;RP1=0, select bank0
+   717  0709  07B9               	addwf	(main@j),f
+   718  070A  1803               	skipnc
+   719  070B  0ABA               	incf	(main@j+1),f
+   720  070C  3000               	movlw	high(01h)
+   721  070D  07BA               	addwf	(main@j+1),f
+   722                           	
+   723  070E                     l1943:	
+   724  070E  083A               	movf	(main@j+1),w
+   725  070F  3A80               	xorlw	80h
+   726  0710  00FE               	movwf	btemp+0
+   727  0711  3080               	movlw	(high(05h))^80h
+   728  0712  027E               	subwf	btemp+0,w
+   729  0713  1D03               	skipz
+   730  0714  2F17               	goto	u2315
+   731  0715  3005               	movlw	low(05h)
+   732  0716  0239               	subwf	(main@j),w
+   733  0717                     u2315:
+   734                           
+   735  0717  1C03               	skipc
+   736  0718  2F1A               	goto	u2311
+   737  0719  2F1B               	goto	u2310
+   738  071A                     u2311:
+   739  071A  2EFA               	goto	l580
+   740  071B                     u2310:
+   741                           	
+   742  071B                     l581:	
+   743                           	line	65
+   744                           	
+   745  071B                     l1945:	
+   746                           ;LCD BLUETOOTH.c: 64: }
+   747                           ;LCD BLUETOOTH.c: 65: _delay((unsigned long)((1000)*(4000000/4000.0)));
+   748                           	opt asmopt_off
+   749  071B  3006               movlw  6
+   750  071C  00F4               movwf	((??_main+0)+0+2),f
+   751  071D  300E               movlw	14
+   752  071E  00F3               movwf	((??_main+0)+0+1),f
+   753  071F  30B0               	movlw	176
+   754  0720  00F2               movwf	((??_main+0)+0),f
+   755  0721                     u2397:
+   756  0721  0BF2               	decfsz	((??_main+0)+0),f
+   757  0722  2F21               	goto	u2397
+   758  0723  0BF3               	decfsz	((??_main+0)+0+1),f
+   759  0724  2F21               	goto	u2397
+   760  0725  0BF4               	decfsz	((??_main+0)+0+2),f
+   761  0726  2F21               	goto	u2397
+   762                           opt asmopt_on
+   763                           
+   764                           	line	66
+   765                           ;LCD BLUETOOTH.c: 66: }
+   766  0727  2FFC               	goto	l582
+   767                           	line	67
+   768                           	
+   769  0728                     l577:	
+   770                           	
+   771  0728                     l1947:	
+   772                           ;LCD BLUETOOTH.c: 67: else if(RCREG=='6')
+   773  0728  1283               	bcf	status, 5	;RP0=0, select bank0
+   774  0729  1303               	bcf	status, 6	;RP1=0, select bank0
+   775  072A  081A               	movf	(26),w	;volatile
+   776  072B  3A36               	xorlw	036h
+   777  072C  1D03               	skipz
+   778  072D  2F2F               	goto	u2321
+   779  072E  2F30               	goto	u2320
+   780  072F                     u2321:
+   781  072F  2F91               	goto	l583
+   782  0730                     u2320:
+   783                           	line	69
+   784                           	
+   785  0730                     l1949:	
+   786                           ;LCD BLUETOOTH.c: 68: {
+   787                           ;LCD BLUETOOTH.c: 69: command(0x01);
+   788  0730  3001               	movlw	(01h)
+   789  0731  120A  118A  25F3   	fcall	_command
+              120A  118A         
+   790                           	line	70
+   791                           	
+   792  0736                     l1951:	
+   793                           ;LCD BLUETOOTH.c: 70: char a[]={"muru"};
+   794  0736  3032               	movlw	(main@a_315)&0ffh
+   795  0737  0084               	movwf	fsr0
+   796  0738  1283               	bcf	status, 5	;RP0=0, select bank0
+   797  0739  1303               	bcf	status, 6	;RP1=0, select bank0
+   798  073A  0851               	movf	(main@F527),w
+   799  073B  1383               	bcf	status, 7	;select IRP bank0
+   800  073C  0080               	movwf	indf
+   801  073D  0A84               	incf	fsr0,f
+   802  073E  0852               	movf	(main@F527)+1,w
+   803  073F  0080               	movwf	indf
+   804  0740  0A84               	incf	fsr0,f
+   805  0741  0853               	movf	(main@F527)+2,w
+   806  0742  0080               	movwf	indf
+   807  0743  0A84               	incf	fsr0,f
+   808  0744  0854               	movf	(main@F527)+3,w
+   809  0745  0080               	movwf	indf
+   810  0746  0A84               	incf	fsr0,f
+   811  0747  0855               	movf	(main@F527)+4,w
+   812  0748  0080               	movwf	indf
+   813                           	line	71
+   814                           	
+   815  0749                     l1953:	
+   816                           ;LCD BLUETOOTH.c: 71: command(0x80);
+   817  0749  3080               	movlw	(080h)
+   818  074A  120A  118A  25F3   	fcall	_command
+              120A  118A         
+   819                           	line	72
+   820                           	
+   821  074F                     l1955:	
+   822                           ;LCD BLUETOOTH.c: 72: for(int k=0;k<=3;k++)
+   823  074F  3000               	movlw	low(0)
+   824  0750  1283               	bcf	status, 5	;RP0=0, select bank0
+   825  0751  1303               	bcf	status, 6	;RP1=0, select bank0
+   826  0752  00BB               	movwf	(main@k)
+   827  0753  3000               	movlw	high(0)
+   828  0754  00BC               	movwf	((main@k))+1
+   829                           	
+   830  0755                     l1957:	
+   831  0755  083C               	movf	(main@k+1),w
+   832  0756  3A80               	xorlw	80h
+   833  0757  00FE               	movwf	btemp+0
+   834  0758  3080               	movlw	(high(04h))^80h
+   835  0759  027E               	subwf	btemp+0,w
+   836  075A  1D03               	skipz
+   837  075B  2F5E               	goto	u2335
+   838  075C  3004               	movlw	low(04h)
+   839  075D  023B               	subwf	(main@k),w
+   840  075E                     u2335:
+   841                           
+   842  075E  1C03               	skipc
+   843  075F  2F61               	goto	u2331
+   844  0760  2F62               	goto	u2330
+   845  0761                     u2331:
+   846  0761  2F63               	goto	l586
+   847  0762                     u2330:
+   848                           	
+   849  0762                     l1959:	
+   850  0762  2F84               	goto	l587
+   851                           	line	73
+   852                           	
+   853  0763                     l586:	
+   854                           	line	74
+   855                           	
+   856  0763                     l1961:	
+   857                           ;LCD BLUETOOTH.c: 73: {
+   858                           ;LCD BLUETOOTH.c: 74: data(a[k]);
+   859  0763  1283               	bcf	status, 5	;RP0=0, select bank0
+   860  0764  1303               	bcf	status, 6	;RP1=0, select bank0
+   861  0765  083B               	movf	(main@k),w
+   862  0766  3E32               	addlw	main@a_315&0ffh
+   863  0767  0084               	movwf	fsr0
+   864  0768  1383               	bcf	status, 7	;select IRP bank0
+   865  0769  0800               	movf	indf,w
+   866  076A  120A  118A  2606   	fcall	_data
+              120A  118A         
+   867                           	line	72
+   868                           	
+   869  076F                     l1963:	
+   870  076F  3001               	movlw	low(01h)
+   871  0770  1283               	bcf	status, 5	;RP0=0, select bank0
+   872  0771  1303               	bcf	status, 6	;RP1=0, select bank0
+   873  0772  07BB               	addwf	(main@k),f
+   874  0773  1803               	skipnc
+   875  0774  0ABC               	incf	(main@k+1),f
+   876  0775  3000               	movlw	high(01h)
+   877  0776  07BC               	addwf	(main@k+1),f
+   878                           	
+   879  0777                     l1965:	
+   880  0777  083C               	movf	(main@k+1),w
+   881  0778  3A80               	xorlw	80h
+   882  0779  00FE               	movwf	btemp+0
+   883  077A  3080               	movlw	(high(04h))^80h
+   884  077B  027E               	subwf	btemp+0,w
+   885  077C  1D03               	skipz
+   886  077D  2F80               	goto	u2345
+   887  077E  3004               	movlw	low(04h)
+   888  077F  023B               	subwf	(main@k),w
+   889  0780                     u2345:
+   890                           
+   891  0780  1C03               	skipc
+   892  0781  2F83               	goto	u2341
+   893  0782  2F84               	goto	u2340
+   894  0783                     u2341:
+   895  0783  2F63               	goto	l586
+   896  0784                     u2340:
+   897                           	
+   898  0784                     l587:	
+   899                           	line	76
+   900                           	
+   901  0784                     l1967:	
+   902                           ;LCD BLUETOOTH.c: 75: }
+   903                           ;LCD BLUETOOTH.c: 76: _delay((unsigned long)((1000)*(4000000/4000.0)));
+   904                           	opt asmopt_off
+   905  0784  3006               movlw  6
+   906  0785  00F4               movwf	((??_main+0)+0+2),f
+   907  0786  300E               movlw	14
+   908  0787  00F3               movwf	((??_main+0)+0+1),f
+   909  0788  30B0               	movlw	176
+   910  0789  00F2               movwf	((??_main+0)+0),f
+   911  078A                     u2407:
+   912  078A  0BF2               	decfsz	((??_main+0)+0),f
+   913  078B  2F8A               	goto	u2407
+   914  078C  0BF3               	decfsz	((??_main+0)+0+1),f
+   915  078D  2F8A               	goto	u2407
+   916  078E  0BF4               	decfsz	((??_main+0)+0+2),f
+   917  078F  2F8A               	goto	u2407
+   918                           opt asmopt_on
+   919                           
+   920                           	line	77
+   921                           ;LCD BLUETOOTH.c: 77: }
+   922  0790  2FFC               	goto	l588
+   923                           	line	78
+   924                           	
+   925  0791                     l583:	
+   926                           	
+   927  0791                     l1969:	
+   928                           ;LCD BLUETOOTH.c: 78: else if(RCREG=='4')
+   929  0791  1283               	bcf	status, 5	;RP0=0, select bank0
+   930  0792  1303               	bcf	status, 6	;RP1=0, select bank0
+   931  0793  081A               	movf	(26),w	;volatile
+   932  0794  3A34               	xorlw	034h
+   933  0795  1D03               	skipz
+   934  0796  2F98               	goto	u2351
+   935  0797  2F99               	goto	u2350
+   936  0798                     u2351:
+   937  0798  2FFC               	goto	l589
+   938  0799                     u2350:
+   939                           	line	80
+   940                           	
+   941  0799                     l1971:	
+   942                           ;LCD BLUETOOTH.c: 79: {
+   943                           ;LCD BLUETOOTH.c: 80: command(0x01);
+   944  0799  3001               	movlw	(01h)
+   945  079A  120A  118A  25F3   	fcall	_command
+              120A  118A         
+   946                           	line	81
+   947                           	
+   948  079F                     l1973:	
+   949                           ;LCD BLUETOOTH.c: 81: char a[]={"santo"};
+   950  079F  302C               	movlw	(main@a_318)&0ffh
+   951  07A0  0084               	movwf	fsr0
+   952  07A1  1283               	bcf	status, 5	;RP0=0, select bank0
+   953  07A2  1303               	bcf	status, 6	;RP1=0, select bank0
+   954  07A3  084B               	movf	(main@F531),w
+   955  07A4  1383               	bcf	status, 7	;select IRP bank0
+   956  07A5  0080               	movwf	indf
+   957  07A6  0A84               	incf	fsr0,f
+   958  07A7  084C               	movf	(main@F531)+1,w
+   959  07A8  0080               	movwf	indf
+   960  07A9  0A84               	incf	fsr0,f
+   961  07AA  084D               	movf	(main@F531)+2,w
+   962  07AB  0080               	movwf	indf
+   963  07AC  0A84               	incf	fsr0,f
+   964  07AD  084E               	movf	(main@F531)+3,w
+   965  07AE  0080               	movwf	indf
+   966  07AF  0A84               	incf	fsr0,f
+   967  07B0  084F               	movf	(main@F531)+4,w
+   968  07B1  0080               	movwf	indf
+   969  07B2  0A84               	incf	fsr0,f
+   970  07B3  0850               	movf	(main@F531)+5,w
+   971  07B4  0080               	movwf	indf
+   972                           	line	82
+   973                           	
+   974  07B5                     l1975:	
+   975                           ;LCD BLUETOOTH.c: 82: command(0x80);
+   976  07B5  3080               	movlw	(080h)
+   977  07B6  120A  118A  25F3   	fcall	_command
+              120A  118A         
+   978                           	line	83
+   979                           	
+   980  07BB                     l1977:	
+   981                           ;LCD BLUETOOTH.c: 83: for(int l=0;l<=4;l++)
+   982  07BB  3000               	movlw	low(0)
+   983  07BC  1283               	bcf	status, 5	;RP0=0, select bank0
+   984  07BD  1303               	bcf	status, 6	;RP1=0, select bank0
+   985  07BE  00BD               	movwf	(main@l)
+   986  07BF  3000               	movlw	high(0)
+   987  07C0  00BE               	movwf	((main@l))+1
+   988                           	
+   989  07C1                     l1979:	
+   990  07C1  083E               	movf	(main@l+1),w
+   991  07C2  3A80               	xorlw	80h
+   992  07C3  00FE               	movwf	btemp+0
+   993  07C4  3080               	movlw	(high(05h))^80h
+   994  07C5  027E               	subwf	btemp+0,w
+   995  07C6  1D03               	skipz
+   996  07C7  2FCA               	goto	u2365
+   997  07C8  3005               	movlw	low(05h)
+   998  07C9  023D               	subwf	(main@l),w
+   999  07CA                     u2365:
+  1000                           
+  1001  07CA  1C03               	skipc
+  1002  07CB  2FCD               	goto	u2361
+  1003  07CC  2FCE               	goto	u2360
+  1004  07CD                     u2361:
+  1005  07CD  2FCF               	goto	l592
+  1006  07CE                     u2360:
+  1007                           	
+  1008  07CE                     l1981:	
+  1009  07CE  2FF0               	goto	l593
+  1010                           	line	84
+  1011                           	
+  1012  07CF                     l592:	
+  1013                           	line	85
+  1014                           	
+  1015  07CF                     l1983:	
+  1016                           ;LCD BLUETOOTH.c: 84: {
+  1017                           ;LCD BLUETOOTH.c: 85: data(a[l]);
+  1018  07CF  1283               	bcf	status, 5	;RP0=0, select bank0
+  1019  07D0  1303               	bcf	status, 6	;RP1=0, select bank0
+  1020  07D1  083D               	movf	(main@l),w
+  1021  07D2  3E2C               	addlw	main@a_318&0ffh
+  1022  07D3  0084               	movwf	fsr0
+  1023  07D4  1383               	bcf	status, 7	;select IRP bank0
+  1024  07D5  0800               	movf	indf,w
+  1025  07D6  120A  118A  2606   	fcall	_data
+              120A  118A         
+  1026                           	line	83
+  1027                           	
+  1028  07DB                     l1985:	
+  1029  07DB  3001               	movlw	low(01h)
+  1030  07DC  1283               	bcf	status, 5	;RP0=0, select bank0
+  1031  07DD  1303               	bcf	status, 6	;RP1=0, select bank0
+  1032  07DE  07BD               	addwf	(main@l),f
+  1033  07DF  1803               	skipnc
+  1034  07E0  0ABE               	incf	(main@l+1),f
+  1035  07E1  3000               	movlw	high(01h)
+  1036  07E2  07BE               	addwf	(main@l+1),f
+  1037                           	
+  1038  07E3                     l1987:	
+  1039  07E3  083E               	movf	(main@l+1),w
+  1040  07E4  3A80               	xorlw	80h
+  1041  07E5  00FE               	movwf	btemp+0
+  1042  07E6  3080               	movlw	(high(05h))^80h
+  1043  07E7  027E               	subwf	btemp+0,w
+  1044  07E8  1D03               	skipz
+  1045  07E9  2FEC               	goto	u2375
+  1046  07EA  3005               	movlw	low(05h)
+  1047  07EB  023D               	subwf	(main@l),w
+  1048  07EC                     u2375:
+  1049                           
+  1050  07EC  1C03               	skipc
+  1051  07ED  2FEF               	goto	u2371
+  1052  07EE  2FF0               	goto	u2370
+  1053  07EF                     u2371:
+  1054  07EF  2FCF               	goto	l592
+  1055  07F0                     u2370:
+  1056                           	
+  1057  07F0                     l593:	
+  1058                           	line	87
+  1059                           	
+  1060  07F0                     l1989:	
+  1061                           ;LCD BLUETOOTH.c: 86: }
+  1062                           ;LCD BLUETOOTH.c: 87: _delay((unsigned long)((1000)*(4000000/4000.0)));
+  1063                           	opt asmopt_off
+  1064  07F0  3006               movlw  6
+  1065  07F1  00F4               movwf	((??_main+0)+0+2),f
+  1066  07F2  300E               movlw	14
+  1067  07F3  00F3               movwf	((??_main+0)+0+1),f
+  1068  07F4  30B0               	movlw	176
+  1069  07F5  00F2               movwf	((??_main+0)+0),f
+  1070  07F6                     u2417:
+  1071  07F6  0BF2               	decfsz	((??_main+0)+0),f
+  1072  07F7  2FF6               	goto	u2417
+  1073  07F8  0BF3               	decfsz	((??_main+0)+0+1),f
+  1074  07F9  2FF6               	goto	u2417
+  1075  07FA  0BF4               	decfsz	((??_main+0)+0+2),f
+  1076  07FB  2FF6               	goto	u2417
+  1077                           opt asmopt_on
+  1078                           
+  1079                           	line	88
+  1080                           	
+  1081  07FC                     l589:	
+  1082                           	line	90
+  1083                           	
+  1084  07FC                     l588:	
+  1085                           	
+  1086  07FC                     l582:	
+  1087                           	
+  1088  07FC                     l576:	
+  1089                           	
+  1090  07FC                     l594:	
+  1091                           	line	43
+  1092  07FC  2E50               	goto	l570
+  1093                           	
+  1094  07FD                     l595:	
+  1095                           	line	91
+  1096                           	
+  1097  07FD                     l596:	
+  1098                           	global	start
+  1099  07FD  120A  118A  2800   	ljmp	start
+  1100                           	opt stack 0
+  1101                           GLOBAL	__end_of_main
+  1102  0800                     	__end_of_main:
+  1103 ;; =============== function _main ends ============
+  1104                           
+  1105                           	signat	_main,88
+  1106                           	global	_data
+  1107                           psect	text111,local,class=CODE,delta=2
+  1108                           global __ptext111
+  1109  0606                     __ptext111:
+  1110                           
+  1111 ;; *************** function _data *****************
+  1112 ;; Defined at:
+  1113 ;;		line 17 in file "C:\Users\sreya\Desktop\embeded\LCD BLUETOOTH\LCD BLUETOOTH.c"
+  1114 ;; Parameters:    Size  Location     Type
+  1115 ;;  z               1    wreg     unsigned char 
+  1116 ;; Auto vars:     Size  Location     Type
+  1117 ;;  z               1    1[COMMON] unsigned char 
+  1118 ;; Return value:  Size  Location     Type
+  1119 ;;		None               void
+  1120 ;; Registers used:
+  1121 ;;		wreg
+  1122 ;; Tracked objects:
+  1123 ;;		On entry : 0/0
+  1124 ;;		On exit  : 0/0
+  1125 ;;		Unchanged: 0/0
+  1126 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+  1127 ;;      Params:         0       0       0       0       0
+  1128 ;;      Locals:         1       0       0       0       0
+  1129 ;;      Temps:          1       0       0       0       0
+  1130 ;;      Totals:         2       0       0       0       0
+  1131 ;;Total ram usage:        2 bytes
+  1132 ;; Hardware stack levels used:    1
+  1133 ;; This function calls:
+  1134 ;;		Nothing
+  1135 ;; This function is called by:
+  1136 ;;		_main
+  1137 ;; This function uses a non-reentrant model
+  1138 ;;
+  1139                           psect	text111
+  1140                           	file	"C:\Users\sreya\Desktop\embeded\LCD BLUETOOTH\LCD BLUETOOTH.c"
+  1141                           	line	17
+  1142                           	global	__size_of_data
+  1143  0013                     	__size_of_data	equ	__end_of_data-_data
+  1144                           	
+  1145  0606                     _data:	
+  1146                           	opt	stack 7
+  1147                           ; Regs used in _data: [wreg]
+  1148                           ;data@z stored from wreg
+  1149  0606  00F1               	movwf	(data@z)
+  1150                           	line	18
+  1151                           	
+  1152  0607                     l1883:	
+  1153                           ;LCD BLUETOOTH.c: 18: PORTD=z;
+  1154  0607  0871               	movf	(data@z),w
+  1155  0608  1283               	bcf	status, 5	;RP0=0, select bank0
+  1156  0609  1303               	bcf	status, 6	;RP1=0, select bank0
+  1157  060A  0088               	movwf	(8)	;volatile
+  1158                           	line	19
+  1159                           	
+  1160  060B                     l1885:	
+  1161                           ;LCD BLUETOOTH.c: 19: RC0=1;
+  1162  060B  1407               	bsf	(56/8),(56)&7
+  1163                           	line	20
+  1164                           	
+  1165  060C                     l1887:	
+  1166                           ;LCD BLUETOOTH.c: 20: RC1=0;
+  1167  060C  1087               	bcf	(57/8),(57)&7
+  1168                           	line	21
+  1169                           	
+  1170  060D                     l1889:	
+  1171                           ;LCD BLUETOOTH.c: 21: RC2=1;
+  1172  060D  1507               	bsf	(58/8),(58)&7
+  1173                           	line	22
+  1174                           ;LCD BLUETOOTH.c: 22: _delay((unsigned long)((1)*(4000000/4000.0)));
+  1175                           	opt asmopt_off
+  1176  060E  30F9               movlw	249
+  1177  060F  00F0               movwf	(??_data+0)+0,f
+  1178  0610                     u2427:
+  1179  0610  0064               	clrwdt
+  1180  0611  0BF0               decfsz	(??_data+0)+0,f
+  1181  0612  2E10               	goto	u2427
+  1182  0613  2E14               	nop2	;nop
+  1183  0614  0064               	clrwdt
+  1184                           opt asmopt_on
+  1185                           
+  1186                           	line	23
+  1187                           	
+  1188  0615                     l1891:	
+  1189                           ;LCD BLUETOOTH.c: 23: RC2=0;
+  1190  0615  1283               	bcf	status, 5	;RP0=0, select bank0
+  1191  0616  1303               	bcf	status, 6	;RP1=0, select bank0
+  1192  0617  1107               	bcf	(58/8),(58)&7
+  1193                           	line	24
+  1194                           	
+  1195  0618                     l564:	
+  1196  0618  0008               	return
+  1197                           	opt stack 0
+  1198                           GLOBAL	__end_of_data
+  1199  0619                     	__end_of_data:
+  1200 ;; =============== function _data ends ============
+  1201                           
+  1202                           	signat	_data,4216
+  1203                           	global	_command
+  1204                           psect	text112,local,class=CODE,delta=2
+  1205                           global __ptext112
+  1206  05F3                     __ptext112:
+  1207                           
+  1208 ;; *************** function _command *****************
+  1209 ;; Defined at:
+  1210 ;;		line 8 in file "C:\Users\sreya\Desktop\embeded\LCD BLUETOOTH\LCD BLUETOOTH.c"
+  1211 ;; Parameters:    Size  Location     Type
+  1212 ;;  y               1    wreg     unsigned char 
+  1213 ;; Auto vars:     Size  Location     Type
+  1214 ;;  y               1    1[COMMON] unsigned char 
+  1215 ;; Return value:  Size  Location     Type
+  1216 ;;		None               void
+  1217 ;; Registers used:
+  1218 ;;		wreg
+  1219 ;; Tracked objects:
+  1220 ;;		On entry : 0/0
+  1221 ;;		On exit  : 0/0
+  1222 ;;		Unchanged: 0/0
+  1223 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+  1224 ;;      Params:         0       0       0       0       0
+  1225 ;;      Locals:         1       0       0       0       0
+  1226 ;;      Temps:          1       0       0       0       0
+  1227 ;;      Totals:         2       0       0       0       0
+  1228 ;;Total ram usage:        2 bytes
+  1229 ;; Hardware stack levels used:    1
+  1230 ;; This function calls:
+  1231 ;;		Nothing
+  1232 ;; This function is called by:
+  1233 ;;		_main
+  1234 ;;		_initial
+  1235 ;; This function uses a non-reentrant model
+  1236 ;;
+  1237                           psect	text112
+  1238                           	file	"C:\Users\sreya\Desktop\embeded\LCD BLUETOOTH\LCD BLUETOOTH.c"
+  1239                           	line	8
+  1240                           	global	__size_of_command
+  1241  0013                     	__size_of_command	equ	__end_of_command-_command
+  1242                           	
+  1243  05F3                     _command:	
+  1244                           	opt	stack 7
+  1245                           ; Regs used in _command: [wreg]
+  1246                           ;command@y stored from wreg
+  1247  05F3  00F1               	movwf	(command@y)
+  1248                           	line	9
+  1249                           	
+  1250  05F4                     l1873:	
+  1251                           ;LCD BLUETOOTH.c: 9: PORTD=y;
+  1252  05F4  0871               	movf	(command@y),w
+  1253  05F5  1283               	bcf	status, 5	;RP0=0, select bank0
+  1254  05F6  1303               	bcf	status, 6	;RP1=0, select bank0
+  1255  05F7  0088               	movwf	(8)	;volatile
+  1256                           	line	10
+  1257                           	
+  1258  05F8                     l1875:	
+  1259                           ;LCD BLUETOOTH.c: 10: RC0=0;
+  1260  05F8  1007               	bcf	(56/8),(56)&7
+  1261                           	line	11
+  1262                           	
+  1263  05F9                     l1877:	
+  1264                           ;LCD BLUETOOTH.c: 11: RC1=0;
+  1265  05F9  1087               	bcf	(57/8),(57)&7
+  1266                           	line	12
+  1267                           	
+  1268  05FA                     l1879:	
+  1269                           ;LCD BLUETOOTH.c: 12: RC2=1;
+  1270  05FA  1507               	bsf	(58/8),(58)&7
+  1271                           	line	13
+  1272                           ;LCD BLUETOOTH.c: 13: _delay((unsigned long)((1)*(4000000/4000.0)));
+  1273                           	opt asmopt_off
+  1274  05FB  30F9               movlw	249
+  1275  05FC  00F0               movwf	(??_command+0)+0,f
+  1276  05FD                     u2437:
+  1277  05FD  0064               	clrwdt
+  1278  05FE  0BF0               decfsz	(??_command+0)+0,f
+  1279  05FF  2DFD               	goto	u2437
+  1280  0600  2E01               	nop2	;nop
+  1281  0601  0064               	clrwdt
+  1282                           opt asmopt_on
+  1283                           
+  1284                           	line	14
+  1285                           	
+  1286  0602                     l1881:	
+  1287                           ;LCD BLUETOOTH.c: 14: RC2=0;
+  1288  0602  1283               	bcf	status, 5	;RP0=0, select bank0
+  1289  0603  1303               	bcf	status, 6	;RP1=0, select bank0
+  1290  0604  1107               	bcf	(58/8),(58)&7
+  1291                           	line	15
+  1292                           	
+  1293  0605                     l561:	
+  1294  0605  0008               	return
+  1295                           	opt stack 0
+  1296                           GLOBAL	__end_of_command
+  1297  0606                     	__end_of_command:
+  1298 ;; =============== function _command ends ============
+  1299                           
+  1300                           	signat	_command,4216
+  1301                           psect	text113,local,class=CODE,delta=2
+  1302                           global __ptext113
+  1303  0000                     __ptext113:
+  1304                           	global	btemp
+  1305  007E                     	btemp set 07Eh
+  1306                           
+  1307                           	DABS	1,126,2	;btemp
+  1308                           	global	wtemp0
+  1309  007E                     	wtemp0 set btemp
+
+
+HI-TECH Software PICC Macro Assembler V9.71a build 6446 
+Symbol Table                                                                                   Thu Jan 05 10:54:06 2023
+
+                   pc 0002                    fsr 0004                   l561 0605                   l570 0650  
+                 l571 06BC                   l564 0618                   l580 06FA                   l581 071B  
+                 l582 07FC                   l574 068E                   l583 0791                   l575 06AF  
+                 l592 07CF                   l576 07FC                   l593 07F0                   l577 0728  
+                 l594 07FC                   l586 0763                   l595 07FD                   l587 0784  
+                 l596 07FD                   l588 07FC                   l589 07FC                   _RC0 0038  
+                 _RC1 0039                   _RC2 003A                   fsr0 0004                   indf 0000  
+                l1901 064A                  l1911 067A                  l1903 0650                  l1921 06A2  
+                l1913 0680                  l1905 0658                  l1931 06E0                  l1923 06AF  
+                l1915 068D                  l1907 065E                  l1941 0706                  l1933 06E6  
+                l1925 06BC                  l1917 068E                  l1909 0674                  l1951 0736  
+                l1943 070E                  l1935 06EC                  l1927 06C4                  l1919 069A  
+                l1881 0602                  l1873 05F4                  l1961 0763                  l1953 0749  
+                l1945 071B                  l1937 06F9                  l1929 06CA                  l1875 05F8  
+                l1891 0615                  l1883 0607                  l1971 0799                  l1963 076F  
+                l1955 074F                  l1947 0728                  l1939 06FA                  l1877 05F9  
+                l1885 060B                  l1981 07CE                  l1973 079F                  l1965 0777  
+                l1957 0755                  l1949 0730                  l1893 0630                  l1879 05FA  
+                l1887 060C                  l1983 07CF                  l1975 07B5                  l1967 0784  
+                l1959 0762                  l1895 0636                  l1889 060D                  l1985 07DB  
+                l1977 07BB                  l1969 0791                  l1897 063A                  l1987 07E3  
+                l1979 07C1                  l1899 0645                  l1989 07F0                  _BRGH 04C2  
+                u2300 06F9                  u2301 06F8                  u2310 071B                  u2311 071A  
+                u2320 0730                  u2321 072F                  u2305 06F5                  u2330 0762  
+                u2331 0761                  u2315 0717                  u2340 0784                  u2260 0658  
+                u2341 0783                  u2261 0657                  u2350 0799                  u2270 068D  
+                u2351 0798                  u2407 078A                  u2335 075E                  u2271 068C  
+                u2360 07CE                  u2280 06AF                  u2417 07F6                  u2361 07CD  
+                u2345 0780                  u2281 06AE                  u2370 07F0                  u2290 06C4  
+                u2427 0610                  u2371 07EF                  u2291 06C3                  u2275 0689  
+                u2437 05FD                  u2365 07CA                  u2285 06AB                  u2375 07EC  
+                u2387 06B5                  u2397 0721                  _data 0606                  _main 0630  
+                btemp 007E                  start 0000                 ?_data 0070                 ?_main 0070  
+               _RCREG 001A                 _RCSTA 0018                 _SPBRG 0099                 _PORTC 0007  
+               _PORTD 0008                 _TRISC 0087                 _TRISD 0088                 _TXSTA 0098  
+     __end_of_command 0606                 data@z 0071                 main@a 0020                 main@i 0037  
+               main@j 0039                 main@k 003B                 main@l 003D                 pclath 000A  
+               status 0003                 wtemp0 007E          __end_of_data 0619          __end_of_main 0800  
+              ??_data 0070                ??_main 0072             ??_command 0070        __pcstackCOMMON 0070  
+        __pidataBANK0 0619            __pmaintext 0630               _command 05F3  end_of_initialization 05EF  
+             init_ram 05D4   start_initialization 05E1           __pdataBANK0 003F         __pcstackBANK0 0020  
+           __ptext111 0606             __ptext112 05F3             __ptext113 0000              ?_command 0070  
+           main@a_312 0026             main@a_315 0032             main@a_318 002C             init_fetch 05D0  
+    __size_of_command 0013         __size_of_data 0013         __size_of_main 01D0              main@F531 004B  
+            main@F523 0045              main@F527 0051              main@F519 003F              command@y 0071  

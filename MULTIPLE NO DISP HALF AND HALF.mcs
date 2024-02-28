@@ -1,0 +1,185 @@
+[Header]
+MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
+Version=1.0
+[File000]
+Location=D:\MICROPROCESSOR WORKSHOP\Projects\SEGMENT PROJECTS\MULTIPLE NO DISP HALF AND HALF\MULTIPLE NO DISP HALF AND HALF.p1
+Folder=Intermediary
+DeviceName=PIC16F877A
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\bin\picc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|MULTIPLE NO DISP HALF AND HALF.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString= C9=1
+TraceCmdString=
+DebugOptions=
+[File001]
+Location=D:\MICROPROCESSOR WORKSHOP\Projects\SEGMENT PROJECTS\MULTIPLE NO DISP HALF AND HALF\MULTIPLE NO DISP HALF AND HALF.cof
+Folder=Output
+DeviceName=PIC16F877A
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\bin\picc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|MULTIPLE NO DISP HALF AND HALF.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString= C9=1
+TraceCmdString=
+DebugOptions=
+[File002]
+Location=D:\MICROPROCESSOR WORKSHOP\Projects\SEGMENT PROJECTS\MULTIPLE NO DISP HALF AND HALF\MULTIPLE NO DISP HALF AND HALF.hex
+Folder=Output
+DeviceName=PIC16F877A
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\bin\picc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|MULTIPLE NO DISP HALF AND HALF.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString= C9=1
+TraceCmdString=
+DebugOptions=
+[File003]
+Location=D:\MICROPROCESSOR WORKSHOP\Projects\SEGMENT PROJECTS\MULTIPLE NO DISP HALF AND HALF\MULTIPLE NO DISP HALF AND HALF.sym
+Folder=Output
+DeviceName=PIC16F877A
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\bin\picc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|MULTIPLE NO DISP HALF AND HALF.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString= C9=1
+TraceCmdString=
+DebugOptions=
+[File004]
+Location=D:\MICROPROCESSOR WORKSHOP\Projects\SEGMENT PROJECTS\MULTIPLE NO DISP HALF AND HALF\MULTIPLE NO DISP HALF AND HALF.map
+Folder=Output
+DeviceName=PIC16F877A
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\bin\picc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|MULTIPLE NO DISP HALF AND HALF.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString= C9=1
+TraceCmdString=
+DebugOptions=
+[File005]
+Location=D:\MICROPROCESSOR WORKSHOP\Projects\SEGMENT PROJECTS\MULTIPLE NO DISP HALF AND HALF\MULTIPLE NO DISP HALF AND HALF.hxl
+Folder=Output
+DeviceName=PIC16F877A
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\bin\picc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|MULTIPLE NO DISP HALF AND HALF.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString= C9=1
+TraceCmdString=
+DebugOptions=
+[File006]
+Location=D:\MICROPROCESSOR WORKSHOP\Projects\SEGMENT PROJECTS\MULTIPLE NO DISP HALF AND HALF\startup.lst
+Folder=Output
+DeviceName=PIC16F877A
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\bin\picc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|MULTIPLE NO DISP HALF AND HALF.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString= C9=1
+TraceCmdString=
+DebugOptions=
+[File007]
+Location=D:\MICROPROCESSOR WORKSHOP\Projects\SEGMENT PROJECTS\MULTIPLE NO DISP HALF AND HALF\startup.rlf
+Folder=Output
+DeviceName=PIC16F877A
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\bin\picc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|MULTIPLE NO DISP HALF AND HALF.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString= C9=1
+TraceCmdString=
+DebugOptions=
+[File008]
+Location=D:\MICROPROCESSOR WORKSHOP\Projects\SEGMENT PROJECTS\MULTIPLE NO DISP HALF AND HALF\doprnt.p1
+Folder=Output
+DeviceName=PIC16F877A
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\bin\picc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|MULTIPLE NO DISP HALF AND HALF.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString= C9=1
+TraceCmdString=
+DebugOptions=
+[File009]
+Location=D:\MICROPROCESSOR WORKSHOP\Projects\SEGMENT PROJECTS\MULTIPLE NO DISP HALF AND HALF\doprnt.pre
+Folder=Output
+DeviceName=PIC16F877A
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\bin\picc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|MULTIPLE NO DISP HALF AND HALF.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString= C9=1
+TraceCmdString=
+DebugOptions=
+[File010]
+Location=D:\MICROPROCESSOR WORKSHOP\Projects\SEGMENT PROJECTS\MULTIPLE NO DISP HALF AND HALF\MULTIPLE NO DISP HALF AND HALF.obj
+Folder=Output
+DeviceName=PIC16F877A
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\bin\picc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|MULTIPLE NO DISP HALF AND HALF.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString= C9=1
+TraceCmdString=
+DebugOptions=
+[File011]
+Location=D:\MICROPROCESSOR WORKSHOP\Projects\SEGMENT PROJECTS\MULTIPLE NO DISP HALF AND HALF\MULTIPLE NO DISP HALF AND HALF.lst
+Folder=Output
+DeviceName=PIC16F877A
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\bin\picc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|MULTIPLE NO DISP HALF AND HALF.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString= C9=1
+TraceCmdString=
+DebugOptions=
+[File012]
+Location=D:\MICROPROCESSOR WORKSHOP\Projects\SEGMENT PROJECTS\MULTIPLE NO DISP HALF AND HALF\MULTIPLE NO DISP HALF AND HALF.rlf
+Folder=Output
+DeviceName=PIC16F877A
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\bin\picc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|MULTIPLE NO DISP HALF AND HALF.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString= C9=1
+TraceCmdString=
+DebugOptions=
+[File013]
+Location=D:\MICROPROCESSOR WORKSHOP\Projects\SEGMENT PROJECTS\MULTIPLE NO DISP HALF AND HALF\MULTIPLE NO DISP HALF AND HALF.sdb
+Folder=Output
+DeviceName=PIC16F877A
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC\9.71a\bin\picc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|MULTIPLE NO DISP HALF AND HALF.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString= C9=1
+TraceCmdString=
+DebugOptions=
