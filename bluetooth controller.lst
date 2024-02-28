@@ -1,0 +1,359 @@
+
+
+HI-TECH Software PIC LITE Macro Assembler V9.71a build 6446 
+                                                                                               Thu Jan 05 09:09:44 2023
+
+HI-TECH Software Omniscient Code Generator (Lite mode) build 6446
+     1  0000                     opt subtitle "HI-TECH Software Omniscient Code Generator (Lite mode) build 6446"
+     2                           
+     3                           opt pagewidth 120
+     4                           
+     5                           	opt lm
+     6                           
+     7                           	processor	16F877A
+     8                           clrc	macro
+     9                           	bcf	3,0
+    10  0000                     	endm
+    11                           clrz	macro
+    12                           	bcf	3,2
+    13  0000                     	endm
+    14                           setc	macro
+    15                           	bsf	3,0
+    16  0000                     	endm
+    17                           setz	macro
+    18                           	bsf	3,2
+    19  0000                     	endm
+    20                           skipc	macro
+    21                           	btfss	3,0
+    22  0000                     	endm
+    23                           skipz	macro
+    24                           	btfss	3,2
+    25  0000                     	endm
+    26                           skipnc	macro
+    27                           	btfsc	3,0
+    28  0000                     	endm
+    29                           skipnz	macro
+    30                           	btfsc	3,2
+    31  0000                     	endm
+    32  0000                     indf	equ	0
+    33  0000                     indf0	equ	0
+    34  0002                     pc	equ	2
+    35  0002                     pcl	equ	2
+    36  0003                     status	equ	3
+    37  0004                     fsr	equ	4
+    38  0004                     fsr0	equ	4
+    39  0001                     c	equ	1
+    40  0000                     z	equ	0
+    41  000A                     pclath	equ	10
+    42                           # 2 "C:\Users\sreya\Desktop\embeded\bluetooth controller\bluetooth controller.c"
+    43                           	psect config,class=CONFIG,delta=2 ;#
+    44                           # 2 "C:\Users\sreya\Desktop\embeded\bluetooth controller\bluetooth controller.c"
+    45  2007  3F72               	dw 0x3F72 ;#
+    46                           	FNROOT	_main
+    47                           	global	_PORTC
+    48                           psect	maintext,global,class=CODE,delta=2
+    49                           global __pmaintext
+    50  07D1                     __pmaintext:
+    51  0007                     _PORTC	set	7
+    52                           	global	_PORTD
+    53  0008                     _PORTD	set	8
+    54                           	global	_RCREG
+    55  001A                     _RCREG	set	26
+    56                           	global	_RCSTA
+    57  0018                     _RCSTA	set	24
+    58                           	global	_RD0
+    59  0040                     _RD0	set	64
+    60                           	global	_SPBRG
+    61  0099                     _SPBRG	set	153
+    62                           	global	_TRISC
+    63  0087                     _TRISC	set	135
+    64                           	global	_TRISD
+    65  0088                     _TRISD	set	136
+    66                           	global	_TXSTA
+    67  0098                     _TXSTA	set	152
+    68                           	global	_BRGH
+    69  04C2                     _BRGH	set	1218
+    70                           	file	"bluetooth controller.as"
+    71                           	line	#
+    72                           psect cinit,class=CODE,delta=2
+    73                           global start_initialization
+    74  07CD                     start_initialization:
+    75                           
+    76                           psect cinit,class=CODE,delta=2
+    77                           global end_of_initialization
+    78                           
+    79                           ;End of C runtime variable initialization code
+    80                           
+    81  07CD                     end_of_initialization:
+    82  07CD  0183               clrf status
+    83  07CE  120A  118A  2FD1   ljmp _main	;jump to C main() function
+    84                           psect	cstackCOMMON,class=COMMON,space=1
+    85                           global __pcstackCOMMON
+    86  0000                     __pcstackCOMMON:
+    87                           	global	?_main
+    88  0000                     ?_main:	; 0 bytes @ 0x0
+    89                           	global	??_main
+    90  0000                     ??_main:	; 0 bytes @ 0x0
+    91 ;;Data sizes: Strings 0, constant 0, data 0, bss 0, persistent 0 stack 0
+    92 ;;Auto spaces:   Size  Autos    Used
+    93 ;; COMMON          14      0       0
+    94 ;; BANK0           80      0       0
+    95 ;; BANK1           80      0       0
+    96 ;; BANK3           96      0       0
+    97 ;; BANK2           96      0       0
+    98                           
+    99 ;;
+   100 ;; Pointer list with targets:
+   101                           
+   102                           
+   103                           
+   104 ;;
+   105 ;; Critical Paths under _main in COMMON
+   106 ;;
+   107 ;;   None.
+   108 ;;
+   109 ;; Critical Paths under _main in BANK0
+   110 ;;
+   111 ;;   None.
+   112 ;;
+   113 ;; Critical Paths under _main in BANK1
+   114 ;;
+   115 ;;   None.
+   116 ;;
+   117 ;; Critical Paths under _main in BANK3
+   118 ;;
+   119 ;;   None.
+   120 ;;
+   121 ;; Critical Paths under _main in BANK2
+   122 ;;
+   123 ;;   None.
+   124                           
+   125 ;;
+   126 ;;Main: autosize = 0, tempsize = 0, incstack = 0, save=0
+   127 ;;
+   128                           
+   129 ;;
+   130 ;;Call Graph Tables:
+   131 ;;
+   132 ;; ---------------------------------------------------------------------------------
+   133 ;; (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+   134 ;; ---------------------------------------------------------------------------------
+   135 ;; (0) _main                                                 0     0      0       0
+   136 ;; ---------------------------------------------------------------------------------
+   137 ;; Estimated maximum stack depth 0
+   138 ;; ---------------------------------------------------------------------------------
+   139                           
+   140 ;; Call Graph Graphs:
+   141                           
+   142 ;; _main (ROOT)
+   143 ;;
+   144                           
+   145 ;; Address spaces:
+   146                           
+   147 ;;Name               Size   Autos  Total    Cost      Usage
+   148 ;;BITCOMMON            E      0       0       0        0.0%
+   149 ;;EEDATA             100      0       0       0        0.0%
+   150 ;;NULL                 0      0       0       0        0.0%
+   151 ;;CODE                 0      0       0       0        0.0%
+   152 ;;COMMON               E      0       0       1        0.0%
+   153 ;;BITSFR0              0      0       0       1        0.0%
+   154 ;;SFR0                 0      0       0       1        0.0%
+   155 ;;BITSFR1              0      0       0       2        0.0%
+   156 ;;SFR1                 0      0       0       2        0.0%
+   157 ;;STACK                0      0       0       2        0.0%
+   158 ;;ABS                  0      0       0       3        0.0%
+   159 ;;BITBANK0            50      0       0       4        0.0%
+   160 ;;BITSFR3              0      0       0       4        0.0%
+   161 ;;SFR3                 0      0       0       4        0.0%
+   162 ;;BANK0               50      0       0       5        0.0%
+   163 ;;BITSFR2              0      0       0       5        0.0%
+   164 ;;SFR2                 0      0       0       5        0.0%
+   165 ;;BITBANK1            50      0       0       6        0.0%
+   166 ;;BANK1               50      0       0       7        0.0%
+   167 ;;BITBANK3            60      0       0       8        0.0%
+   168 ;;BANK3               60      0       0       9        0.0%
+   169 ;;BITBANK2            60      0       0      10        0.0%
+   170 ;;BANK2               60      0       0      11        0.0%
+   171 ;;DATA                 0      0       0      12        0.0%
+   172                           
+   173                           	global	_main
+   174                           psect	maintext
+   175                           
+   176 ;; *************** function _main *****************
+   177 ;; Defined at:
+   178 ;;		line 6 in file "C:\Users\sreya\Desktop\embeded\bluetooth controller\bluetooth controller.c"
+   179 ;; Parameters:    Size  Location     Type
+   180 ;;		None
+   181 ;; Auto vars:     Size  Location     Type
+   182 ;;		None
+   183 ;; Return value:  Size  Location     Type
+   184 ;;		None               void
+   185 ;; Registers used:
+   186 ;;		wreg, status,2
+   187 ;; Tracked objects:
+   188 ;;		On entry : 17F/0
+   189 ;;		On exit  : 0/0
+   190 ;;		Unchanged: 0/0
+   191 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+   192 ;;      Params:         0       0       0       0       0
+   193 ;;      Locals:         0       0       0       0       0
+   194 ;;      Temps:          0       0       0       0       0
+   195 ;;      Totals:         0       0       0       0       0
+   196 ;;Total ram usage:        0 bytes
+   197 ;; This function calls:
+   198 ;;		Nothing
+   199 ;; This function is called by:
+   200 ;;		Startup code after reset
+   201 ;; This function uses a non-reentrant model
+   202 ;;
+   203                           psect	maintext
+   204                           	file	"C:\Users\sreya\Desktop\embeded\bluetooth controller\bluetooth controller.c"
+   205                           	line	6
+   206                           	global	__size_of_main
+   207  002F                     	__size_of_main	equ	__end_of_main-_main
+   208                           	
+   209  07D1                     _main:	
+   210                           	opt	stack 8
+   211                           ; Regs used in _main: [wreg+status,2]
+   212                           	line	7
+   213                           	
+   214  07D1                     l934:	
+   215                           ;bluetooth controller.c: 7: TRISD=0x00;
+   216  07D1  1683               	bsf	status, 5	;RP0=1, select bank1
+   217  07D2  1303               	bcf	status, 6	;RP1=0, select bank1
+   218  07D3  0188               	clrf	(136)^080h	;volatile
+   219                           	line	8
+   220                           ;bluetooth controller.c: 8: PORTD=0x00;
+   221  07D4  1283               	bcf	status, 5	;RP0=0, select bank0
+   222  07D5  1303               	bcf	status, 6	;RP1=0, select bank0
+   223  07D6  0188               	clrf	(8)	;volatile
+   224                           	line	9
+   225                           	
+   226  07D7                     l936:	
+   227                           ;bluetooth controller.c: 9: TRISC=0x80;
+   228  07D7  3080               	movlw	(080h)
+   229  07D8  1683               	bsf	status, 5	;RP0=1, select bank1
+   230  07D9  1303               	bcf	status, 6	;RP1=0, select bank1
+   231  07DA  0087               	movwf	(135)^080h	;volatile
+   232                           	line	10
+   233                           	
+   234  07DB                     l938:	
+   235                           ;bluetooth controller.c: 10: PORTC=0x00;
+   236  07DB  1283               	bcf	status, 5	;RP0=0, select bank0
+   237  07DC  1303               	bcf	status, 6	;RP1=0, select bank0
+   238  07DD  0187               	clrf	(7)	;volatile
+   239                           	line	11
+   240                           ;bluetooth controller.c: 11: TXSTA=0x24;
+   241  07DE  3024               	movlw	(024h)
+   242  07DF  1683               	bsf	status, 5	;RP0=1, select bank1
+   243  07E0  1303               	bcf	status, 6	;RP1=0, select bank1
+   244  07E1  0098               	movwf	(152)^080h	;volatile
+   245                           	line	12
+   246                           ;bluetooth controller.c: 12: RCSTA=0x90;
+   247  07E2  3090               	movlw	(090h)
+   248  07E3  1283               	bcf	status, 5	;RP0=0, select bank0
+   249  07E4  1303               	bcf	status, 6	;RP1=0, select bank0
+   250  07E5  0098               	movwf	(24)	;volatile
+   251                           	line	13
+   252                           	
+   253  07E6                     l940:	
+   254                           ;bluetooth controller.c: 13: BRGH=1;
+   255  07E6  1683               	bsf	status, 5	;RP0=1, select bank1
+   256  07E7  1303               	bcf	status, 6	;RP1=0, select bank1
+   257  07E8  1518               	bsf	(1218/8)^080h,(1218)&7
+   258                           	line	14
+   259                           ;bluetooth controller.c: 14: SPBRG=25;
+   260  07E9  3019               	movlw	(019h)
+   261  07EA  0099               	movwf	(153)^080h	;volatile
+   262                           	line	15
+   263                           ;bluetooth controller.c: 15: while(1)
+   264                           	
+   265  07EB                     l559:	
+   266                           	line	17
+   267                           ;bluetooth controller.c: 16: {
+   268                           ;bluetooth controller.c: 17: if(RCREG=='1')
+   269  07EB  1283               	bcf	status, 5	;RP0=0, select bank0
+   270  07EC  1303               	bcf	status, 6	;RP1=0, select bank0
+   271  07ED  081A               	movf	(26),w	;volatile
+   272  07EE  3A31               	xorlw	031h
+   273  07EF  1D03               	skipz
+   274  07F0  2FF2               	goto	u11
+   275  07F1  2FF3               	goto	u10
+   276  07F2                     u11:
+   277  07F2  2FF5               	goto	l560
+   278  07F3                     u10:
+   279                           	line	19
+   280                           	
+   281  07F3                     l942:	
+   282                           ;bluetooth controller.c: 18: {
+   283                           ;bluetooth controller.c: 19: RD0=1;
+   284  07F3  1408               	bsf	(64/8),(64)&7
+   285                           	line	20
+   286                           ;bluetooth controller.c: 20: }
+   287  07F4  2FFC               	goto	l561
+   288                           	line	21
+   289                           	
+   290  07F5                     l560:	
+   291                           	
+   292  07F5                     l944:	
+   293                           ;bluetooth controller.c: 21: else if(RCREG=='0')
+   294  07F5  081A               	movf	(26),w	;volatile
+   295  07F6  3A30               	xorlw	030h
+   296  07F7  1D03               	skipz
+   297  07F8  2FFA               	goto	u21
+   298  07F9  2FFB               	goto	u20
+   299  07FA                     u21:
+   300  07FA  2FFC               	goto	l562
+   301  07FB                     u20:
+   302                           	line	23
+   303                           	
+   304  07FB                     l946:	
+   305                           ;bluetooth controller.c: 22: {
+   306                           ;bluetooth controller.c: 23: RD0=0;
+   307  07FB  1008               	bcf	(64/8),(64)&7
+   308                           	line	24
+   309                           	
+   310  07FC                     l562:	
+   311                           	line	25
+   312                           	
+   313  07FC                     l561:	
+   314                           	
+   315  07FC                     l563:	
+   316                           	line	15
+   317  07FC  2FEB               	goto	l559
+   318                           	
+   319  07FD                     l564:	
+   320                           	line	26
+   321                           	
+   322  07FD                     l565:	
+   323                           	global	start
+   324  07FD  120A  118A  2800   	ljmp	start
+   325                           	opt stack 0
+   326                           GLOBAL	__end_of_main
+   327  0800                     	__end_of_main:
+   328 ;; =============== function _main ends ============
+   329                           
+   330                           	signat	_main,88
+   331                           psect	maintext
+   332                           	global	btemp
+   333  007E                     	btemp set 07Eh
+   334                           
+   335                           	DABS	1,126,2	;btemp
+   336                           	global	wtemp0
+   337  007E                     	wtemp0 set btemp
+
+
+HI-TECH Software PICC Macro Assembler V9.71a build 6446 
+Symbol Table                                                                                   Thu Jan 05 09:09:44 2023
+
+                  u10 07F3                    u11 07F2                    u20 07FB                    u21 07FA  
+                 l560 07F5                   l561 07FC                   l562 07FC                   l563 07FC  
+                 l564 07FD                   l565 07FD                   l559 07EB                   l940 07E6  
+                 l942 07F3                   l934 07D1                   l944 07F5                   l936 07D7  
+                 l946 07FB                   l938 07DB                   _RD0 0040                  _BRGH 04C2  
+                _main 07D1                  btemp 007E                  start 0000                 ?_main 0000  
+               _RCREG 001A                 _RCSTA 0018                 _SPBRG 0099                 _PORTC 0007  
+               _PORTD 0008                 _TRISC 0087                 _TRISD 0088                 _TXSTA 0098  
+               status 0003                 wtemp0 007E          __end_of_main 0800                ??_main 0000  
+      __pcstackCOMMON 0000            __pmaintext 07D1  end_of_initialization 07CD   start_initialization 07CD  
+       __size_of_main 002F  
